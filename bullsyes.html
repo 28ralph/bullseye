@@ -160,6 +160,30 @@
         pic1.style.left = x + "px";
         pic1.style.top = y + "px";
         counter += 1;
+
+        if (counter !==15){
+            setTimeout(move, difficulty1)
+        }
+        if (counter === 15){
+            pic1.removeEventListener("click", don);
+            counter = 0
+        }
+    }
+
+    function don(){
+
+        score1 += 1;
+
+        if (score1 === 10){
+            document.getElementById("one").style.backgroundColor = "blue";
+        }
+
+
+
+
+
+
+
     }
 
 
