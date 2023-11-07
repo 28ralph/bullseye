@@ -129,7 +129,7 @@
 
     <div id = "button">Start Game</div>
 
-    <h1 id = "score"></h1>
+    <h1 id = "win"></h1>
     <img src="smile.png" id="pic">
 
 <script>
@@ -138,6 +138,7 @@
     const hard = document.getElementById("hard");
 
     const button1 = document.getElementById("button");
+    const win = document.getElementById("win");
     button1.addEventListener("click", begin);
 
     let x = 0;
@@ -161,10 +162,16 @@
         pic1.style.top = y + "px";
         counter += 1;
 
+        if (score1 === 10){
+            win.innerHTML = "Congratulations, you win in " + counter + " moves";
+            return;
+        }
+
         if (counter !==15){
             setTimeout(move, difficulty1)
         }
         if (counter === 15){
+            
             pic1.removeEventListener("click", don);
             counter = 0
         }
@@ -210,6 +217,7 @@
 
     function begin(){
         const score2 = document.querySelectorAll(".score");
+        win.innerHTML = "";
         for(let i=0; i <score2.length; i++){
             score2[i].style.backgroundColor = "cyan"
         }
