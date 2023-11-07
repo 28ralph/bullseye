@@ -147,6 +147,17 @@
     const pic1 = document.getElementById("pic");
     let score1 = 0;
 
+    pic1.addEventListener("click", don);
+
+    function move(){
+        if(easy.checked){difficulty1 = 1000};
+        if(hard.checked){difficulty1 = 790};
+
+        if(score1 != 10){
+            x = Math.floor(Math.random() * 400);
+            y = Math.floor(Math.random() * 400 ); 
+        }
+    }
 
 
 
