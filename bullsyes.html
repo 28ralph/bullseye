@@ -206,14 +206,20 @@
             document.getElementById("ten").style.backgroundColor = "blue";
         }
 
-
-
-
-
-
-
     }
 
+    function begin(){
+        const score2 = document.querySelectorAll(".score");
+        for(let i=0; i <score2.length; i++){
+            score2[i].style.backgroundColor = "cyan"
+        }
+
+        score1 = 0;
+        counter = 0;
+        pic1.addEventListener("click", don);
+        setTimeout(move, 2000);
+    }
+    </script>
 
 
 
