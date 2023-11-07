@@ -4,6 +4,7 @@ There will be a smiley face initially on the upper left corner of the screen.
 There is a button on the lower right conrner of the screen.
 Also, there will be two radio buttons on the lower right corner of the screen.
 The radio buttons will give you the option for easy or hard game.
+If you chose the hard game, the face will move faster making it more difficult to successfully click on.
 A meter will be also present on the right side of the screen.
 
 To start the game you click on the "Start Game" button.
