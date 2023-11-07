@@ -171,7 +171,9 @@
             setTimeout(move, difficulty1)
         }
         if (counter === 15){
-            
+            if (score1 !== 10){
+                win.innerHTML = "You lose. Better luck next time!";
+            }
             pic1.removeEventListener("click", don);
             counter = 0
         }
